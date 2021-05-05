@@ -1,0 +1,27 @@
+$clr-bg: #D0D7D9;
+$clr-text: #1D0F12;
+$clr2: #82A8D9;
+$clr3: #425d7e;
+$clr1: #D99C9C;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin transition-ease {
+    transition: all .5s ease-in-out;
+}
+
+@mixin media-md {
+    @media screen and (min-width: 900px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}

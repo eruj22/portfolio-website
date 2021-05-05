@@ -1,1 +1,77 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  background-color: #fff;
+  position: relative;
+}
+
+.header-toggle {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.header .burger {
+  position: absolute;
+  width: 35px;
+  height: 5px;
+  margin-top: 15px;
+  background-color: #1D0F12;
+  border-radius: 5px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.header .burger::before, .header .burger::after {
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 5px;
+  background-color: #1D0F12;
+  border-radius: 5px;
+}
+
+.header .burger::after {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+.header .burger::before {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.header .burger.open {
+  -webkit-transform: rotate(720deg);
+          transform: rotate(720deg);
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  color: #1D0F12;
+  background-color: #D0D7D9;
+}
+
+a {
+  text-decoration: none;
+  color: #425d7e;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=main.css.map */

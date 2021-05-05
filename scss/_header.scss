@@ -1,0 +1,46 @@
+.header {
+    background-color: #fff;
+    position: relative;
+
+    &-toggle {
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        right: 0;
+        top: 0;
+        @include transition-ease;
+    }
+
+    .burger {
+        position: absolute;
+        width: 35px;
+        height: 5px;
+        margin-top: 15px;
+        background-color: $clr-text;
+        border-radius: 5px;
+        @include transition-ease;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 35px;
+            height: 5px;
+            background-color: $clr-text;
+            border-radius: 5px;
+        }
+
+        &::after {
+            transform: translateY(10px);
+        }
+
+        &::before {
+            transform: translateY(-10px);
+        }
+
+        &.open {
+            transform: rotate(720deg);
+        }
+    }
+}
