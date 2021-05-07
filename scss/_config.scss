@@ -1,4 +1,4 @@
-$clr-bg: #D0D7D9;
+$clr-white: rgb(250, 250, 250);
 $clr-text: #1D0F12;
 $clr2: #82A8D9;
 $clr3: #425d7e;
@@ -12,6 +12,12 @@ $clr1: #D99C9C;
 
 @mixin transition-ease {
     transition: all .5s ease-in-out;
+}
+
+@mixin media-sm {
+    @media screen and (min-width: 600px) {
+        @content;
+    }
 }
 
 @mixin media-md {

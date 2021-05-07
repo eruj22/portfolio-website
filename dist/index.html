@@ -7,14 +7,12 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Jure Prnaver portfolio</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/c6f8ad6da3.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header class="header">
-        <a href="index.html">
-            <img class="logo" src="assets/logo.png" alt="">
-        </a>
+        <a href="index.html"><img class="logo" src="assets/logo.png" alt="Jure Prnaver's logo"></a>
         <div class="header-toggle" id="toggle-btn">
             <div class="burger"></div>
         </div>
@@ -28,15 +26,30 @@
     </header>
 
     <section class="hero">
-        <div class="container">
+        <div class="container flex">
             <div class="hero__text">
                 <h2>Hi, I am Jure,</h2>
                 <h1>Website Developer</h1>
                 <p>I help people improve their online presence and increase their traffic.</p>
-                <a href="contact.html">Contact me</a>
+                <a class="cta" href="contact.html">Contact me</a>
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <p>Look what I am up to on social media</p>
+        <div class="footer__social">
+            <a href="https://github.com/eruj22">
+                <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.frontendmentor.io/profile/eruj22">
+                <img src="../dist/assets/favicon-32x32.png" alt="link to Frontendmentor profile">
+            </a>
+            <a href="https://www.facebook.com/jure.prnaver/">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+    </footer>
     
     <script src="js/main.js"></script>
 </body>

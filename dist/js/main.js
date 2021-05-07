@@ -1,6 +1,6 @@
 // Navigation
-const menuBtn = document.getElementsById('toggle-btn');
-const nav = document.getElementsById('nav');
+const menuBtn = document.getElementById('toggle-btn');
+const nav = document.getElementById('nav');
 
 let menuOpen = false;
 

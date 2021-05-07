@@ -1,3 +1,43 @@
-// @include media-md {
-    
-// }
+@include media-sm {
+    .hero {
+        background-size: contain;
+        background-position: right;
+    }
+}
+
+@include media-md {
+    .hero {
+        .flex {
+            align-items: center;
+            text-align: start;
+            justify-content: flex-start;
+            margin-top: 0;
+        }
+    }
+
+    .header {
+        .burger {
+            display: none;
+        }
+
+        .nav {
+            position: relative;
+            transform: translateX(0);
+
+            &__menu {
+                flex-direction: row;
+            }
+
+            &__item {
+                margin: 0 .5rem;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@include media-lg {
+    .hero {
+        background-position-x: 70%;
+    }
+}

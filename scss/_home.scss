@@ -1,0 +1,34 @@
+@import 'config';
+
+.hero {
+    height: 84vh;
+    background-image: url(../assets/headshot.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .flex {
+        margin-top: 1rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+
+    &__text {
+        p {
+            margin-bottom: 2rem;
+        }
+
+        .cta {
+            padding: .6rem 1.2rem;
+            border-radius: .5rem;
+            background-color: $clr2;
+            color: $clr-text;
+        
+            &:hover {
+                background-color: $clr3;
+            }
+        }
+    }
+}
