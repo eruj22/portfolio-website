@@ -3,41 +3,143 @@
         background-size: contain;
         background-position: right;
     }
+
+    .about {
+        height: 1000px;
+    }
 }
 
 @include media-md {
     .hero {
         .flex {
-            align-items: center;
+            align-items: flex-start;
             text-align: start;
             justify-content: flex-start;
             margin-top: 0;
         }
-    }
 
-    .header {
-        .burger {
-            display: none;
+        &__text h2 {
+            text-align: left;
         }
 
-        .nav {
-            position: relative;
-            transform: translateX(0);
+        &__text {
+            margin-top: 150px;
+        }
+    }
 
-            &__menu {
-                flex-direction: row;
-            }
+    // .header {
+    //     .burger {
+    //         display: none;
+    //     }
 
-            &__item {
-                margin: 0 .5rem;
-                font-size: 18px;
+    //     .nav {
+    //         position: relative;
+    //         transform: translateX(0);
+
+    //         &__menu {
+    //             flex-direction: row;
+    //         }
+
+    //         &__item {
+    //             margin: 0 .5rem;
+    //             font-size: 18px;
+    //         }
+    //     }
+    // }
+
+    .about {
+        position: relative;
+
+        ul {
+            width: 100%;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 3px;
+            left: 50%;
+            top: 12%;
+            height: 800px;
+            background-color: $clr2;
+        }
+
+        &__timeline {
+            .date {
+                position: absolute;
+                transform: translateY(-40px);
             }
+            
+            li {
+                max-width: 50%;
+
+                &:nth-child(odd) {
+                    float: left;
+                    clear: right;
+                    transform: translateX(-30px);
+
+                    &::after {
+                        right: -31px;
+                        transform: translate(50%, 50%);
+                    }
+                }
+    
+                &:nth-child(even) {
+                    float: right;
+                    clear: left;
+                    transform: translateX(30px);
+
+                    &::after {
+                        left: -29px;
+                        transform: translate(-50%, 50%);
+                    }
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50%;
+                    background-color: $clr2;
+                    top: 0;
+                }
+
+                &:hover::after {
+                    background-color: $clr3;
+                }
+            }
+        }
+    }
+
+    .projects {
+        height: 300vh;
+        display: flex;
+        flex-direction: row;
+    
+        &__title {
+            width: 40%;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+        }
+    
+        &__pages {
+            width: 60%;
+        }
+    
+        &__card {
+            height: 100vh;
         }
     }
 }
 
 @include media-lg {
     .hero {
-        background-position-x: 70%;
+        background-position-x: 75%;
+    }
+
+    .about {
+        height: 950px;
     }
 }

@@ -2,100 +2,99 @@
     background-color: #fff;
     padding: .5rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
 
     .logo {
-        max-height: 50px;
+        max-height: 80px;
     }
 
-    &-toggle {
-        position: relative;
-        width: 35px;
-        height: 35px;
-        cursor: pointer;
-        right: 0;
-        top: 0;
-        @include transition-ease;
-        z-index: 5;
+    // &-toggle {
+    //     position: relative;
+    //     width: 35px;
+    //     height: 35px;
+    //     cursor: pointer;
+    //     right: 0;
+    //     top: 0;
+    //     @include transition-ease;
+    //     z-index: 5;
 
-        &.open {
-            transform: rotate(180deg);
+    //     &.open {
+    //         transform: rotate(180deg);
 
-            .burger::after {
-                transform: rotate(45deg);
-            }
+    //         .burger::after {
+    //             transform: rotate(45deg);
+    //         }
 
-            .burger::before {
-                transform: rotate(-45deg);
-            }
+    //         .burger::before {
+    //             transform: rotate(-45deg);
+    //         }
 
-            .burger {
-                background: transparent;
-            }
-        }
-    }
+    //         .burger {
+    //             background: transparent;
+    //         }
+    //     }
+    // }
 
-    .burger {
-        position: absolute;
-        width: 35px;
-        height: 5px;
-        margin-top: 15px;
-        background-color: $clr-text;
-        border-radius: 5px;
-        @include transition-ease;
+    // .burger {
+    //     position: absolute;
+    //     width: 35px;
+    //     height: 5px;
+    //     margin-top: 15px;
+    //     background-color: $clr-text;
+    //     border-radius: 5px;
+    //     @include transition-ease;
 
-        &::before,
-        &::after {
-            content: '';
-            position: absolute;
-            width: 35px;
-            height: 5px;
-            background-color: $clr-text;
-            border-radius: 5px;
-        }
+    //     &::before,
+    //     &::after {
+    //         content: '';
+    //         position: absolute;
+    //         width: 35px;
+    //         height: 5px;
+    //         background-color: $clr-text;
+    //         border-radius: 5px;
+    //     }
 
-        &::after {
-            transform: translateY(10px);
-        }
+    //     &::after {
+    //         transform: translateY(10px);
+    //     }
 
-        &::before {
-            transform: translateY(-10px);
-        }
-    }
+    //     &::before {
+    //         transform: translateY(-10px);
+    //     }
+    // }
 
-    .nav {
-        position: fixed;
-        z-index: 2;
-        background-color: #fff;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        transform: translateX(120%);
+    // .nav {
+    //     position: fixed;
+    //     z-index: 2;
+    //     background-color: #fff;
+    //     left: 0;
+    //     top: 0;
+    //     bottom: 0;
+    //     right: 0;
+    //     transform: translateX(120%);
 
-        &__menu {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-        }
+    //     &__menu {
+    //         display: flex;
+    //         flex-direction: column;
+    //         align-items: center;
+    //         justify-content: center;
+    //         height: 100%;
+    //     }
 
-        &__item {
-            list-style: none;
-            margin: 2rem 0;
-            font-size: 24px;
+    //     &__item {
+    //         list-style: none;
+    //         margin: 2rem 0;
+    //         font-size: 24px;
         
-            &:hover {
-                border-bottom: 2px solid $clr3;
-            }
-        }
+    //         &:hover {
+    //             border-bottom: 2px solid $clr3;
+    //         }
+    //     }
 
-        &.open {
-            @include transition-ease;
-            transform: translateX(0);
-        }
-    }
+    //     &.open {
+    //         @include transition-ease;
+    //         transform: translateX(0);
+    //     }
+    // }
 
 }

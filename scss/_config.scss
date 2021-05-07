@@ -1,13 +1,19 @@
-$clr-white: rgb(250, 250, 250);
+$clr-white: #fff;
 $clr-text: #1D0F12;
 $clr2: #82A8D9;
 $clr3: #425d7e;
-$clr1: #D99C9C;
+$clr1: #F5F5F5;
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
 }
 
 @mixin transition-ease {

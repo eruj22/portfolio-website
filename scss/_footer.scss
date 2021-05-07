@@ -1,10 +1,8 @@
 .footer {
-    background-color: $clr-white;
-    border-top: 2px solid $clr-text;
-    height: 8vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 3rem 0;
 
     &__social {
         display: flex;

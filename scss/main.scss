@@ -1,4 +1,4 @@
-@import 'home', 'config', 'header', 'responsive', 'footer', 'contact';
+@import 'home', 'config', 'header', 'responsive', 'footer';
 
 body {
     font-size: 16px;
@@ -22,6 +22,11 @@ h1 {
 
 h2 {
     font-size: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 22px;
 }
 
 .container {
