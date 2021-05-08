@@ -113,23 +113,23 @@
     }
 
     .projects {
-        height: 300vh;
+        height: 270vh;
         display: flex;
         flex-direction: row;
     
         &__title {
-            width: 40%;
+            width: 30%;
             height: 100vh;
             position: sticky;
             top: 0;
         }
     
         &__pages {
-            width: 60%;
+            width: 70%;
         }
     
         &__card {
-            height: 100vh;
+            height: 80vh;
         }
     }
 }

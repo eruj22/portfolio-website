@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="header">
-        <a href="index.html"><img class="logo" src="assets/logo.png" alt="Jure Prnaver's logo"></a>
+        <img class="logo" src="assets/logo.png" alt="Jure Prnaver's logo">
         <!-- <div class="header-toggle" id="toggle-btn">
             <div class="burger"></div>
         </div>
@@ -31,7 +31,7 @@
                 <h2>Hi, I am Jure,</h2>
                 <h1>Website Developer</h1>
                 <p>I help people improve their online presence and increase their traffic.</p>
-                <a class="cta" href="contact.html">Contact me</a>
+                <a class="cta" href="#contact">Contact me</a>
             </div>
         </div>
         <div class="hero__wave">
@@ -50,29 +50,28 @@
                         <div class="timeline-content">
                             <span class="date">13. April, 1995</span>
                             <h3>Birth</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, non rem inventore aliquid voluptas explicabo. Placeat magni laborum architecto velit!</p>
+                            <p>I was born in Trbovlje to two loving parents. We were living in suburban area near city. After two years my brother had been born.</p>
                         </div>
                     </li>
                     <li>
                         <div class="timeline-content">
-                            <span class="date">7.5.2021</span>
-                            <h3>blah blah blah</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, non rem inventore aliquid voluptas explicabo. Placeat magni laborum architecto velit!</p>
+                            <span class="date">1. October, 2014</span>
+                            <h3>Studying Mechatronics</h3>
+                            <p>I chose to study in Maribor, even though I have never visited before. It turned out great, because I fell in love with it.</p>
                         </div>
                     </li>
                     <li>
                         <div class="timeline-content">
-                            <span class="date">7.5.2021</span>
-                            <h3>blah blah blah</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, non rem inventore aliquid voluptas explicabo. Placeat magni laborum architecto velit!</p>
+                            <span class="date">12. September, 2019</span>
+                            <h3>Graduating</h3>
+                            <p>After a long time of enjoying as a student this date for me is wake up call to think about what I want to do.</p>
                         </div>
                     </li>
                     <li>
                         <div class="timeline-content">
-                            <span class="date">7.5.2021</span>
-                            <h3>blah blah blah</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, non rem inventore 
-                                aliquid voluptas explicabo. Placeat magni laborum architecto velit!</p>
+                            <span class="date">31. March, 2020</span>
+                            <h3>Lost a job</h3>
+                            <p>I was working as a maintenance electrician in Paloma for 8 months, but I was getting more and more miserable. Luckily, they fired me and I went gave myself time to know myself well.</p>
                         </div>
                     </li>
                 </ul>
@@ -83,36 +82,53 @@
     <section class="projects">
         <div class="projects__title">
             <h2>My past projects</h2>
+            <ul>
+                <li><a href="#website1">Transformer trening klub</a></li>
+                <li><a href="#website2">Easybank website</a></li>
+                <li><a href="#website3">Countries app</a></li>
+            </ul>
         </div> 
 
         <div class="projects__pages">
-            <div class="projects__card">
+            <div class="projects__card" id="website1">
                 <h3>Transformer trening klub - fictional website</h3>
                 <img src="./assets/page1.png" alt="Hero page for fitness website">
                 <p>In this project I made a website for a gym from scratch. First I did a design in Adobe XD, then it was translated to code. I made sure that the website is responsive and accessible.
                     Things that I have learned
                 </p>
+                <a href="https://cranky-kowalevski-1ffd0a.netlify.app/" target="_blank">See site live (opens in new window)</a>
             </div>
-            <div class="projects__card">
+            <div class="projects__card" id="website2">
                 <h3>Easybank website - template from Frontendmentor</h3>
                 <img src="./assets/page2.png" alt="Hero page for Easybank website">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos in minima eum pariatur officia 
-                    sapiente architecto. Provident, dolores dolorem. Nobis magnam, eaque facere fugiat aliquid quae porro 
-                    possimus unde minus. Non quis delectus quos sunt laboriosam error, et debitis officiis!</p>
+                <p>The style of this website is from <a href="" target="_blank">Frontendmentor</a>. I coded it together, so that it is functional and mobile responsive.
+                    <ul>I have learned:
+                        <li>Making hamburger menu on mobile devices</li>
+                        <li>Learning to position background images</li>
+                    </ul>
+                </p>
+                <a href="https://optimistic-hamilton-6ef5fb.netlify.app/" target="_blank">See site live (opens in new window)</a>
             </div>
-            <div class="projects__card">
+            <div class="projects__card"  id="website3">
                 <h3>Countries app</h3>
                 <img src="./assets/page3.png" alt="Web application, where you can find simple data about countries">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos in minima eum pariatur officia 
-                    sapiente architecto. Provident, dolores dolorem. Nobis magnam, eaque facere fugiat aliquid quae porro 
-                    possimus unde minus. Non quis delectus quos sunt laboriosam error, et debitis officiis!</p>
+                <p>For this project I have used API. Of all data that was fetched, in the main menu you can search for countries, filter them by region and click on selected country for more information.<br>
+                    <ul>I have learned:
+                        <li>How to fetch API</li>
+                        <li>Show data in HTML document</li>
+                        <li>Filter data</li>
+                        <li>Search data</li>
+                        <li>Show data in modal</li>
+                    </ul>
+                </p>
+                <a href="" target="_blank">See site live (opens in new window)</a>
             </div>
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <h2>Contact me</h2>
-        <form>
+        <form name="contact" method="POST" data-netlify="true">
             <label for="name">Your name:</label>
             <input type="text" name="name" id="name">
 
@@ -121,6 +137,10 @@
 
             <label for="comment">What you want to say to me?</label>
             <textarea name="comment" id="comment" cols="15" rows="7"></textarea>
+
+            <div class="field">
+                <div data-netlify-recaptcha="true"></div>
+            </div>
 
             <button type="submit" class="submit">Send comment</button>
         </form>

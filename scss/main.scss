@@ -1,4 +1,4 @@
-@import 'home', 'config', 'header', 'responsive', 'footer';
+@import 'home', 'config', 'header', 'responsive';
 
 body {
     font-size: 16px;
@@ -12,6 +12,11 @@ a {
     text-decoration: none;
     color: $clr3;
     padding: .2rem;
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
 }
 
 h1 {
