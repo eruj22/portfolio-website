@@ -4,24 +4,45 @@ const userName = document.getElementById('name');
 const email = document.getElementById('email');
 const comment = document.getElementById('comment');
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    checkInputs();
-    // refresh page and sends form when every input is ok
-    window.location = this.href;
-})
+let i = 0;
+
+form.addEventListener("submit", handleSubmit)
+
+async function handleSubmit(event) {
+    event.preventDefault();
+    if (i < 3) {
+        checkInputs();
+    } else {
+        let status = document.getElementById("my-form-status");
+        let data = new FormData(event.target);
+        fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+            'Accept': 'application/json'
+        }
+        }).then(response => {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
+        }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+        });
+    }
+}
 
 function checkInputs() {
     // get the values from inputs
     const userNameValue = userName.value.trim();
     const emailValue = email.value.trim();
     const commentValue = comment.value.trim();
+    i = 0;
 
     // check userName
     if (userNameValue === '' || userNameValue === null) {
         setError(userName, 'Name can\'t be blank!')
     } else {
         setSuccess(userName);
+        i += 1;
     }
 
     // check email
@@ -31,6 +52,7 @@ function checkInputs() {
         setError(email, 'Email is not valid');
     } else {
         setSuccess(email);
+        i += 1;
     }
 
     // check comment
@@ -38,6 +60,7 @@ function checkInputs() {
         setError(comment, 'Comment can\'t be blank');
     } else {
         setSuccess(comment);
+        i += 1;
     }
 }
 

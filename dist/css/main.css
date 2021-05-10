@@ -275,12 +275,14 @@ button {
 }
 
 .contact form .submit {
+  border: none;
   margin-top: 1rem;
   padding: .7em 2em;
   border-radius: 1rem;
   background-color: #425D7E;
   color: #fff;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .footer {

@@ -235,12 +235,14 @@
         }
 
         .submit {
+            border: none;
             margin-top: 1rem;
             padding: .7em 2em;
             border-radius: 1rem;
             background-color: $clr3;
             color: $clr-white;
             font-size: 18px;
+            cursor: pointer;
         }    
     }
 }
