@@ -7,6 +7,10 @@
     .about {
         height: 1000px;
     }
+
+    .projects {
+        min-height: 270vh;
+    }
 }
 
 @include media-md {
@@ -27,26 +31,6 @@
         }
     }
 
-    // .header {
-    //     .burger {
-    //         display: none;
-    //     }
-
-    //     .nav {
-    //         position: relative;
-    //         transform: translateX(0);
-
-    //         &__menu {
-    //             flex-direction: row;
-    //         }
-
-    //         &__item {
-    //             margin: 0 .5rem;
-    //             font-size: 18px;
-    //         }
-    //     }
-    // }
-
     .about {
         position: relative;
 
@@ -60,7 +44,7 @@
             width: 3px;
             left: 50%;
             top: 12%;
-            height: 800px;
+            height: 700px;
             background-color: $clr2;
         }
 
@@ -113,7 +97,7 @@
     }
 
     .projects {
-        height: 270vh;
+        min-height: 285vh;
         display: flex;
         flex-direction: row;
     
@@ -129,7 +113,9 @@
         }
     
         &__card {
-            height: 80vh;
+            min-height: 80vh;
+            padding: 2rem;
+
         }
     }
 }

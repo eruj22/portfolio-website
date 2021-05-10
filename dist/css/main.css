@@ -55,7 +55,7 @@ button {
 }
 
 .hero__wave .shape-fill {
-  fill: #F5F5F5;
+  fill: #051F40;
 }
 
 .hero__text p {
@@ -65,18 +65,23 @@ button {
 .hero__text .cta {
   padding: .6rem 1.2rem;
   border-radius: .5rem;
-  background-color: #82A8D9;
+  background-color: #abc1df;
   color: #1D0F12;
 }
 
 .hero__text .cta:hover {
-  background-color: #425d7e;
+  color: #fff;
+  background-color: #051F40;
 }
 
 .about {
-  padding: 3rem 0;
-  background-color: #fafafa;
+  padding: 3rem 0 0;
+  background-color: #051F40;
   height: 1200px;
+}
+
+.about h2 {
+  color: #fff;
 }
 
 .about__timeline {
@@ -86,7 +91,7 @@ button {
 
 .about__timeline .date {
   font-size: 14px;
-  color: #425d7e;
+  color: #abc1df;
 }
 
 .about__timeline li {
@@ -110,7 +115,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 250vh;
+  height: 260vh;
 }
 
 .projects img {
@@ -146,9 +151,9 @@ button {
 }
 
 .projects__card {
-  padding: 2rem;
+  padding: 1rem;
   margin: 4rem 2rem;
-  height: 70vh;
+  min-height: 70vh;
   -webkit-box-shadow: 0 2px 10px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 10px 5px rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
@@ -172,11 +177,11 @@ button {
 }
 
 .projects a:hover {
-  border-bottom: 1px solid #425d7e;
+  border-bottom: 1px solid #425D7E;
 }
 
 .contact {
-  background-color: #fafafa;
+  background-color: #051F40;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,44 +198,87 @@ button {
   padding: 3rem 0;
 }
 
+.contact h2 {
+  color: #fff;
+}
+
 .contact form {
   width: 80%;
   max-width: 500px;
   padding: 1rem;
   margin: 2rem 0;
+  color: #fff;
 }
 
-.contact form input,
-.contact form textarea {
+.contact form .form-control {
+  position: relative;
+}
+
+.contact form .form-control input,
+.contact form .form-control textarea {
   display: block;
-  margin: .5rem 0 1rem;
+  margin: .5rem 0;
   padding: .5rem 0 .2rem .5rem;
   font-size: 18px;
   width: 100%;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #1D0F12;
+  border-bottom: 1px solid #fff;
+  color: #fff;
 }
 
-.contact form input:focus,
-.contact form textarea:focus {
-  border: 1px dotted black;
-}
-
-.contact form textarea {
+.contact form .form-control textarea {
   max-width: 100%;
   height: 140px;
   max-height: 250px;
 }
 
-.contact form label {
+.contact form .form-control label {
   font-weight: bold;
 }
 
+.contact form .form-control small {
+  visibility: hidden;
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.contact form .form-control i {
+  position: absolute;
+  right: .5rem;
+  top: .3rem;
+  visibility: hidden;
+}
+
+.contact form .form-control.error input,
+.contact form .form-control.success textarea {
+  border-color: #e74c3c;
+  color: #e74c3c;
+}
+
+.contact form .form-control.success input,
+.contact form .form-control.success textarea {
+  border-color: #2ecc71;
+  color: #2ecc71;
+}
+
+.contact form .form-control.success .fa-check-circle {
+  visibility: visible;
+  color: #2ecc71;
+}
+
+.contact form .form-control.error .fa-exclamation-circle,
+.contact form .form-control.error small {
+  visibility: visible;
+  color: #e74c3c;
+}
+
 .contact form .submit {
+  margin-top: 1rem;
   padding: .7em 2em;
   border-radius: 1rem;
-  background-color: #425d7e;
+  background-color: #425D7E;
   color: #fff;
   font-size: 18px;
 }
@@ -314,6 +362,9 @@ button {
   .about {
     height: 1000px;
   }
+  .projects {
+    min-height: 270vh;
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -345,8 +396,8 @@ button {
     width: 3px;
     left: 50%;
     top: 12%;
-    height: 800px;
-    background-color: #82A8D9;
+    height: 700px;
+    background-color: #abc1df;
   }
   .about__timeline .date {
     position: absolute;
@@ -384,14 +435,14 @@ button {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background-color: #82A8D9;
+    background-color: #abc1df;
     top: 0;
   }
   .about__timeline li:hover::after {
-    background-color: #425d7e;
+    background-color: #425D7E;
   }
   .projects {
-    height: 270vh;
+    min-height: 285vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -411,7 +462,8 @@ button {
     width: 70%;
   }
   .projects__card {
-    height: 80vh;
+    min-height: 80vh;
+    padding: 2rem;
   }
 }
 
@@ -434,7 +486,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #425d7e;
+  color: #425D7E;
   padding: .2rem;
   padding-left: 0;
 }

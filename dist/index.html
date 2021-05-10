@@ -34,7 +34,7 @@
                 <a class="cta" href="#contact">Contact me</a>
             </div>
         </div>
-        <div class="hero__wave">
+        <div class="hero__wave"  aria-label="wave">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
             </svg>
@@ -57,7 +57,7 @@
                         <div class="timeline-content">
                             <span class="date">1. October, 2014</span>
                             <h3>Studying Mechatronics</h3>
-                            <p>I chose to study in Maribor, even though I have never visited before. It turned out great, because I fell in love with it.</p>
+                            <p>I chose to study in Maribor, even though I have never visited it before. It turned out great, because I fell in love with it.</p>
                         </div>
                     </li>
                     <li>
@@ -71,7 +71,7 @@
                         <div class="timeline-content">
                             <span class="date">31. March, 2020</span>
                             <h3>Lost a job</h3>
-                            <p>I was working as a maintenance electrician in Paloma for 8 months, but I was getting more and more miserable. Luckily, they fired me and I went gave myself time to know myself well.</p>
+                            <p>I was working as a maintenance electrician in Paloma for 8 months, but I got laid off. This was the best thing that has happened to me. I took my time to find, what I enjoy to do.</p>
                         </div>
                     </li>
                 </ul>
@@ -94,7 +94,11 @@
                 <h3>Transformer trening klub - fictional website</h3>
                 <img src="./assets/page1.png" alt="Hero page for fitness website">
                 <p>In this project I made a website for a gym from scratch. First I did a design in Adobe XD, then it was translated to code. I made sure that the website is responsive and accessible.
-                    Things that I have learned
+                    <ul>Things that I have learned:
+                        <li>Using Adobe XD</li>
+                        <li>Making FaQ</li>
+                        <li>Making testimonials</li>
+                    </ul>
                 </p>
                 <a href="https://cranky-kowalevski-1ffd0a.netlify.app/" target="_blank">See site live (opens in new window)</a>
             </div>
@@ -102,8 +106,8 @@
                 <h3>Easybank website - template from Frontendmentor</h3>
                 <img src="./assets/page2.png" alt="Hero page for Easybank website">
                 <p>The style of this website is from <a href="" target="_blank">Frontendmentor</a>. I coded it together, so that it is functional and mobile responsive.
-                    <ul>I have learned:
-                        <li>Making hamburger menu on mobile devices</li>
+                    <ul>Things that I have learned:
+                        <li>Making hamburger menu</li>
                         <li>Learning to position background images</li>
                     </ul>
                 </p>
@@ -113,35 +117,45 @@
                 <h3>Countries app</h3>
                 <img src="./assets/page3.png" alt="Web application, where you can find simple data about countries">
                 <p>For this project I have used API. Of all data that was fetched, in the main menu you can search for countries, filter them by region and click on selected country for more information.<br>
-                    <ul>I have learned:
+                    <ul>Things that I have learned:
                         <li>How to fetch API</li>
-                        <li>Show data in HTML document</li>
                         <li>Filter data</li>
                         <li>Search data</li>
                         <li>Show data in modal</li>
                     </ul>
                 </p>
-                <a href="" target="_blank">See site live (opens in new window)</a>
+                <a href="https://objective-poitras-40f0e2.netlify.app/" target="_blank">See site live (opens in new window)</a>
             </div>
         </div>
     </section>
 
     <section class="contact" id="contact">
         <h2>Contact me</h2>
-        <form name="contact" method="POST" data-netlify="true">
-            <label for="name">Your name:</label>
-            <input type="text" name="name" id="name">
-
-            <label for="email">Your email</label>
-            <input type="email" name="email" id="email">
-
-            <label for="comment">What you want to say to me?</label>
-            <textarea name="comment" id="comment" cols="15" rows="7"></textarea>
-
+        <form name="contact" method="POST" data-netlify="true" id="form">
+            <div class="form-control">
+                <label for="name">Your name:</label>
+                <input type="text" name="name" id="name">
+                <i class="fas fa-check-circle" ></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>    
+            </div>
+            <div class="form-control">
+                <label for="email">Your email</label>
+                <input type="email" name="email" id="email">
+                <i class="fas fa-check-circle" ></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="comment">What you want to say to me?</label>
+                <textarea name="comment" id="comment" cols="15" rows="7"></textarea> 
+                <i class="fas fa-check-circle" ></i>
+                <i class="fas fa-exclamation-circle"></i>   
+                <small>Error message</small>
+            </div>
             <div class="field">
                 <div data-netlify-recaptcha="true"></div>
             </div>
-
             <button type="submit" class="submit">Send comment</button>
         </form>
     </section>
@@ -149,19 +163,17 @@
     <footer class="footer">
         <p>Look what I am up to on social media</p>
         <div class="footer__social">
-            <a href="https://github.com/eruj22">
+            <a href="https://github.com/eruj22"  target="_blank"  aria-label="icon">
                 <i class="fab fa-github" aria-hidden="true"></i>
             </a>
-            <a href="https://www.frontendmentor.io/profile/eruj22">
+            <a href="https://www.frontendmentor.io/profile/eruj22"  target="_blank">
                 <img src="../dist/assets/favicon-32x32.png" alt="link to Frontendmentor profile">
             </a>
-            <a href="https://www.facebook.com/jure.prnaver/">
+            <a href="https://www.facebook.com/jure.prnaver/" target="_blank" aria-label="icon">
                 <i class="fab fa-facebook"></i>
             </a>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/jquery.ScrollMagic.min.js" integrity="sha512-2nppfD3Yldtey65ljHpZTHFO/1eeZyy+R69nkezMc7BlvddQwSAD9u0rDkrViSQsmDZMUQ9ZnrArsH/MOTVwKw==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js" integrity="sha512-hFyYiBIWCYSyo98oFGWjG5V8HEV4g5O2pxu0mzU8qIMC7lrrwtcKWoRDZcpRL0ywIIM2d/XsBJ9iXNLFf6kIgw==" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
