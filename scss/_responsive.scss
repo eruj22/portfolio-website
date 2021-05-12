@@ -38,6 +38,10 @@
             width: 100%;
         }
 
+        .date {
+            color: $clr2;
+        }
+
         &::before {
             content: '';
             position: absolute;

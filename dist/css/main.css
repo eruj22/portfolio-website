@@ -91,7 +91,7 @@ button {
 
 .about__timeline .date {
   font-size: 14px;
-  color: #abc1df;
+  color: #051F40;
 }
 
 .about__timeline li {
@@ -391,6 +391,9 @@ button {
   }
   .about ul {
     width: 100%;
+  }
+  .about .date {
+    color: #abc1df;
   }
   .about::before {
     content: '';
