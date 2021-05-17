@@ -1,5 +1,4 @@
 # portfolio-website
-website with my basic info
 
 This is simple website about me and my best projects. It was done with HTML, CSS (using SASS) and JavaScript. Web form is being validated with JS and it is then sent through Formspree to my email address.
 
