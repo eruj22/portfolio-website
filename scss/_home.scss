@@ -247,6 +247,26 @@
     }
 }
 
+.top-link {
+    font-size: 1.4rem;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    color: $clr1;
+    background-color: $clr2;
+    padding: .5rem;
+    display: grid;
+    place-items: center;
+    border-radius: .5rem;
+    visibility: hidden;
+    z-index: -5;
+}
+
+.show-link {
+    visibility: visible;
+    z-index: 5;
+  }
+
 .footer {
     display: flex;
     flex-direction: column;

@@ -6,22 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <title>Jure Prnaver portfolio</title>
-
     <script src="https://kit.fontawesome.com/c6f8ad6da3.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header class="header">
         <img class="logo" src="assets/logo.jpeg" alt="Jure Prnaver's logo">
+        <nav class="nav">
+            <ul class="nav__menu">
+                <li class="nav__link">
+                    <a href="#home" class="nav__item smooth-scroll">home</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#about" class="nav__item smooth-scroll">about</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#projects" class="nav__item smooth-scroll">projects</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#contact" class="nav__item smooth-scroll">contact</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="nav__toggle">
+            <div class="hamburger"></div>
+        </button>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="container flex">
             <div class="hero__text">
-                <h2>Hi, I am Jure,</h2>
+                <h2>Hi, I am Jure Prnaver,</h2>
                 <h1>Website Developer</h1>
                 <p>I help people improve their online presence and increase their traffic.</p>
-                <a class="cta" href="#contact">Contact me</a>
+                <a class="cta smooth-scroll" href="#contact">Contact me</a>
             </div>
         </div>
         <div class="hero__wave"  aria-label="wave">
@@ -31,7 +49,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <h2>About me</h2>
         <div class="container">
             <div class="about__timeline">
@@ -69,13 +87,13 @@
         </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="projects__title">
             <h2>My past projects</h2>
             <ul>
-                <li><a href="#website1">Transformer trening klub</a></li>
-                <li><a href="#website2">Easybank website</a></li>
-                <li><a href="#website3">Countries app</a></li>
+                <li><a href="#website1" class="smooth-scroll">Transformer trening klub</a></li>
+                <li><a href="#website2" class="smooth-scroll">Easybank website</a></li>
+                <li><a href="#website3" class="smooth-scroll">Countries app</a></li>
             </ul>
         </div> 
 
@@ -149,8 +167,13 @@
         </form>
     </section>
 
+    <!-- back to top link -->
+    <a href="#home" class="smooth-scroll top-link">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
     <footer class="footer">
-        <p>Look what I am up to on social media</p>
+        <p>Check out what I have built</p>
         <div class="footer__social">
             <a href="https://github.com/eruj22"  target="_blank" rel="noopener" aria-label="Link to Github account">
                 <i class="fab fa-github" aria-hidden="true"></i>
@@ -158,11 +181,9 @@
             <a href="https://www.frontendmentor.io/profile/eruj22"  target="_blank" rel="noopener">
                 <img src="../assets/favicon-32x32.png" alt="link to Frontendmentor profile">
             </a>
-            <a href="https://www.facebook.com/jure.prnaver/" target="_blank" rel="noopener" aria-label="Link to Facebook account">
-                <i class="fab fa-facebook"></i>
-            </a>
         </div>
     </footer>
+
     <script src="js/main.js"></script>
 </body>
 </html>

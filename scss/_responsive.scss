@@ -14,6 +14,31 @@
 }
 
 @include media-md {
+    .header {
+        
+        .nav {
+            transform: translateY(0);
+            position: relative;
+            top: 0;
+            width: auto;            
+            height: auto !important;
+            visibility: visible;
+
+            &__menu {
+                display: flex;
+                flex-direction: row;
+            }
+
+            &__link {
+                margin: 0 0 0 1rem;
+            }
+
+            &__toggle {
+                display: none;
+            }
+        }
+    }
+
     .hero {
         .flex {
             align-items: flex-start;
