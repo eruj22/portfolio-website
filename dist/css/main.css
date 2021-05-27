@@ -13,7 +13,7 @@ button {
 
 .hero {
   height: 90vh;
-  background-image: url(../assets/headshot.png);
+  background-image: url(../assets/headshot.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -120,6 +120,7 @@ button {
 
 .projects img {
   width: 100%;
+  max-width: 950px;
 }
 
 .projects__title {
@@ -165,6 +166,7 @@ button {
 
 .projects__card p {
   margin: 1rem 0;
+  max-width: 650px;
 }
 
 .projects__card li {
@@ -172,8 +174,13 @@ button {
   margin-left: 2rem;
 }
 
-.projects__card img {
-  max-width: 950px;
+.projects__card-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.projects__card a + a {
+  margin-left: 1rem;
 }
 
 .projects a:hover {
@@ -377,7 +384,8 @@ button {
 }
 
 .header .logo {
-  max-height: 50px;
+  height: 50px;
+  width: 105px;
   z-index: 10;
 }
 
