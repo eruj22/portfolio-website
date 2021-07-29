@@ -1,39 +1,45 @@
 $clr-white: #fff;
-$clr-text: #1D0F12;
+$clr-text: #1d0f12;
 $clr2: #abc1df;
-$clr3: #425D7E;
-$clr1: #051F40;
+$clr3: #425d7e;
+$clr1: #051f40;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 button {
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
 @mixin transition-ease {
-    transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 @mixin media-sm {
-    @media screen and (min-width: 600px) {
-        @content;
-    }
+  @media screen and (min-width: 600px) {
+    @content;
+  }
 }
 
 @mixin media-md {
-    @media screen and (min-width: 900px) {
-        @content;
-    }
+  @media screen and (min-width: 900px) {
+    @content;
+  }
 }
 
 @mixin media-lg {
-    @media screen and (min-width: 1200px) {
-        @content;
-    }
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
 }

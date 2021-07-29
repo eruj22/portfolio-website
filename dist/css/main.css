@@ -13,15 +13,7 @@ button {
 
 .hero {
   height: 90vh;
-  background-image: url(../assets/headshot.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   position: relative;
-}
-
-.hero__text h2 {
-  text-align: center;
 }
 
 .hero .flex {
@@ -55,7 +47,15 @@ button {
 }
 
 .hero__wave .shape-fill {
-  fill: #051F40;
+  fill: #051f40;
+}
+
+.hero__text {
+  margin-top: 4rem;
+}
+
+.hero__text h2 {
+  text-align: center;
 }
 
 .hero__text p {
@@ -63,20 +63,20 @@ button {
 }
 
 .hero__text .cta {
-  padding: .7rem 1.5rem;
-  border-radius: .5rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.5rem;
   background-color: #abc1df;
-  color: #1D0F12;
+  color: #1d0f12;
 }
 
 .hero__text .cta:hover {
   color: #fff;
-  background-color: #051F40;
+  background-color: #051f40;
 }
 
 .about {
   padding: 3rem 0 0;
-  background-color: #051F40;
+  background-color: #051f40;
   height: 1200px;
 }
 
@@ -91,7 +91,7 @@ button {
 
 .about__timeline .date {
   font-size: 14px;
-  color: #051F40;
+  color: #051f40;
 }
 
 .about__timeline li {
@@ -115,7 +115,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 260vh;
+  min-height: 2100px;
 }
 
 .projects img {
@@ -154,7 +154,7 @@ button {
 .projects__card {
   padding: 1rem;
   margin: 4rem 2rem;
-  min-height: 70vh;
+  min-height: 700px;
   -webkit-box-shadow: 0 2px 10px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 10px 5px rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
@@ -184,11 +184,11 @@ button {
 }
 
 .projects a:hover {
-  border-bottom: 1px solid #425D7E;
+  border-bottom: 1px solid #425d7e;
 }
 
 .contact {
-  background-color: #051F40;
+  background-color: #051f40;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,8 +224,8 @@ button {
 .contact form .form-control input,
 .contact form .form-control textarea {
   display: block;
-  margin: .5rem 0;
-  padding: .5rem 0 .2rem .5rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0 0.2rem 0.5rem;
   font-size: 18px;
   width: 100%;
   background-color: transparent;
@@ -253,8 +253,8 @@ button {
 
 .contact form .form-control i {
   position: absolute;
-  right: .5rem;
-  top: .3rem;
+  right: 0.5rem;
+  top: 0.3rem;
   visibility: hidden;
 }
 
@@ -284,9 +284,9 @@ button {
 .contact form .submit {
   border: none;
   margin-top: 1rem;
-  padding: .7em 2em;
+  padding: 0.7em 2em;
   border-radius: 1rem;
-  background-color: #425D7E;
+  background-color: #425d7e;
   color: #fff;
   font-size: 18px;
   cursor: pointer;
@@ -297,13 +297,13 @@ button {
   position: fixed;
   bottom: 3rem;
   right: 3rem;
-  color: #051F40;
+  color: #051f40;
   background-color: #abc1df;
-  padding: .5rem;
+  padding: 0.5rem;
   display: -ms-grid;
   display: grid;
   place-items: center;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   visibility: hidden;
   z-index: -5;
 }
@@ -347,7 +347,7 @@ button {
   margin-top: 1rem;
   width: 40px;
   height: 40px;
-  border: 1px solid #1D0F12;
+  border: 1px solid #1d0f12;
   border-radius: 50%;
 }
 
@@ -424,7 +424,7 @@ button {
 }
 
 .header .nav__link:hover {
-  border-bottom: 1px solid #425D7E;
+  border-bottom: 1px solid #425d7e;
 }
 
 .header .nav__toggle {
@@ -440,7 +440,7 @@ button {
   width: 30px;
   height: 4px;
   border-radius: 5px;
-  background-color: #051F40;
+  background-color: #051f40;
 }
 
 .header .nav__toggle .hamburger::before, .header .nav__toggle .hamburger::after {
@@ -450,7 +450,7 @@ button {
   width: 30px;
   height: 4px;
   border-radius: 5px;
-  background-color: #051F40;
+  background-color: #051f40;
 }
 
 .header .nav__toggle .hamburger::before {
@@ -475,14 +475,16 @@ button {
 
 @media screen and (min-width: 600px) {
   .hero {
+    background-image: url(../assets/headshot.webp);
+    background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
   }
+  .hero__text {
+    margin-top: 0;
+  }
   .about {
     height: 1000px;
-  }
-  .projects {
-    min-height: 270vh;
   }
 }
 
@@ -537,7 +539,7 @@ button {
     color: #abc1df;
   }
   .about::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 3px;
     left: 50%;
@@ -576,7 +578,7 @@ button {
             transform: translate(-50%, 50%);
   }
   .about__timeline li::after {
-    content: '';
+    content: "";
     position: absolute;
     height: 20px;
     width: 20px;
@@ -585,10 +587,9 @@ button {
     top: 0;
   }
   .about__timeline li:hover::after {
-    background-color: #425D7E;
+    background-color: #425d7e;
   }
   .projects {
-    min-height: 285vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -608,7 +609,6 @@ button {
     width: 70%;
   }
   .projects__card {
-    min-height: 80vh;
     padding: 2rem;
   }
 }
@@ -626,13 +626,13 @@ body {
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
-  color: #1D0F12;
+  color: #1d0f12;
   background-color: #fff;
 }
 
 a {
   text-decoration: none;
-  color: #425D7E;
+  color: #425d7e;
   padding: .2rem;
   padding-left: 0;
 }
